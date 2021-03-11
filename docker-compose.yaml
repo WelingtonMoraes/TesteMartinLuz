@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+    wordpress_Martin: 
+        image: wordpress 
+        container_name: wp_Martin
+        restart: always 
+        ports: 
+            - 80:80 
+        environment: 
+            WORDPRESS_DB_HOST: db_Martin
+            WORDPRESS_DB_USER: signodev_desenv 
+            WORDPRESS_DB_PASSWORD: sig2016@
+            WORDPRESS_DB_NAME: signodev_Martin
+        volumes: 
+            - ./:/var/www/html 
+        depends_on: 
+            - db_Martin
+
+    db_Martin: 
+        image: mysql:5.7 
+        restart: always 
+        ports: 
+            - 3306:3306 
+        container_name: mysql_Martin
+        environment: 
+            MYSQL_DATABASE: signodev_Martin
+            MYSQL_USER: signodev_desenv 
+            MYSQL_PASSWORD: sig2016@ 
+            MYSQL_RANDOM_ROOT_PASSWORD: '1' 
+        volumes: 
+            - ./db-docker:/var/lib/mysql
+
+        

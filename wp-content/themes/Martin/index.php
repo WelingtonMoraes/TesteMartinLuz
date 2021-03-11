@@ -17,7 +17,7 @@
             <p>Responderemos <b>em até 24h.</b></p>
         </div>
         <div class="col-6">
-            <img src="https://via.placeholder.com/700x618"/>
+            <img src="assets/images/home/img-1.png"/>
         </div>
     </div>
 </div>
