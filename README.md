@@ -1,12 +1,12 @@
 # TesteMartinLuz
-Teste seletivo, pagina de posts wordpress
+Teste seletivo Martin Luz, pagina de posts wordpress
 
 ## Banco de dados do wordpress
-se necessario existem um dump do banco na pasta "db-dumps"
+Se necessário existem um dump do banco na pasta "db-dumps"
 
 ## Projeto em docker
-para iniciar o projeto é necessario docker installado
+Para iníciar o projeto com o docker...
 
-executar o seguinte comando na pasta do projeto
+Executar o seguinte comando na pasta do projeto
 
 * docker-compose up -d
