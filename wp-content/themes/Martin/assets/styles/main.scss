@@ -5,7 +5,11 @@
 //@import "components/_footer.scss";
 
 /* Paginas */
-@import "components/_home.scss";
+@import "pages/_home.scss";
+
+/* Componentes */
+@import "components/_botao.scss";
+//@import "components/_colors.scss";
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -44,7 +48,7 @@ body{
 }
 
 h1, h2, h3, p, a, span{
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a{

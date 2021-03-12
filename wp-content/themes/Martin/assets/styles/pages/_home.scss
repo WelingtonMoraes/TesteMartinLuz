@@ -1,0 +1,54 @@
+.home{
+    padding: 100px 0px;
+
+    &__reembolso{
+        width: 80%;
+        margin: 0 auto;
+
+        h1{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 42px;
+            line-height: 49px;
+            color: #041F8F;
+
+            max-width: 505px;
+        }
+
+        h2{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 40px;
+            color: #041F8F;
+
+            max-width: 375px;
+        }
+
+        p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: #84888C;
+
+            max-width: 450px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        &--backimg{
+            max-width: 90%;
+            border-radius: 10px;
+        }
+    }
+
+    &__organizar{
+        background-color: #0285C9;
+        max-width: 90%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+}

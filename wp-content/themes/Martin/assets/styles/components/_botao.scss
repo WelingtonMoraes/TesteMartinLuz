@@ -1,0 +1,33 @@
+.btn{
+    &__claro{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        background-color: #0285C9;
+        border-radius: 5px;
+        padding: 15px 35px;
+        display: inline-block;
+    }
+
+    &__escuro{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        background-color: #041F8F;
+        border-radius: 5px;
+        padding: 15px 35px;
+        display: inline-block;
+    }
+}
