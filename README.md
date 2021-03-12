@@ -1,9 +1,12 @@
 # TesteMartinLuz
-Teste seletivo, pagina de posts wordpress
+Teste seletivo Martin Luz, página de posts wordpress
 
-## PROJETO EM DOCKER
-para iniciar o projeto é necessario docker installado
+## Banco de dados do wordpress
+Se necessário existe um dump do banco de dados na pasta "db-dumps"
 
-executar o seguinte comando no prompt de comando na pasta do projeto
+## Projeto em docker
+Para iniciar o projeto com o docker...
+
+Executar o seguinte comando na pasta do projeto
 
 * docker-compose up -d
