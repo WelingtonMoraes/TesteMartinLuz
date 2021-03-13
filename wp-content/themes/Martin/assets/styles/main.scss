@@ -4,12 +4,13 @@
 /* Footer */
 //@import "components/_footer.scss";
 
-/* Paginas */
-@import "pages/_home.scss";
-
 /* Componentes */
 @import "components/_botao.scss";
 @import "components/_modalVideo.scss";
+@import "components/_font-style.scss";
+
+/* Paginas */
+@import "pages/_home.scss";
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -45,14 +46,6 @@ body{
  
 .grid{
   display: grid;
-}
-
-h1, h2, h3, p, a, span{
-  font-family: 'Roboto', sans-serif;
-}
-
-a{
-  text-decoration: none;
 }
 
 .alinItem {

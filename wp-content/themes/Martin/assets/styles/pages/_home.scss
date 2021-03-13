@@ -1,41 +1,38 @@
 .home{
-    padding: 100px 0px;
+    padding-top: 100px;
+
+    @media (max-width: 750px) {
+        padding-top: 40px;
+    }
 
     &__reembolso{
         width: 80%;
         margin: 0 auto;
 
         h1{
-            font-style: normal;
-            font-weight: normal;
-            font-size: 42px;
-            line-height: 49px;
             color: #041F8F;
-
             max-width: 505px;
             margin: 5px;
         }
 
         h2{
-            font-style: normal;
-            font-weight: normal;
-            font-size: 32px;
-            line-height: 40px;
             color: #041F8F;
-
             max-width: 375px;
             margin: 5px;
         }
 
         p{
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 26px;
             color: #84888C;
-
             max-width: 450px;
             margin: 0px;
+        }
+
+        .respondemos{ 
+            color: #0285C9;
+            
+            @media (max-width: 750px) {
+                text-align: center;
+            }
         }
 
         img{
@@ -46,38 +43,89 @@
             max-width: 90%;
             border-radius: 10px;
         }
+
+        @media (max-width: 750px) {
+            flex-direction: column-reverse !important;
+            flex-wrap: wrap !important;
+            margin-bottom: 50px;
+            width: 90%;
+
+            .col-6{
+                width: 100%;
+                flex: 1;
+            }
+        }
+    }
+
+    &__controle{
+        width: 80%;
+        margin: 0 auto;
+
+        h1{
+            color: #041F8F;
+            max-width: 505px;
+            margin: 5px;
+        }
+
+        h2{
+            color: #041F8F;
+            max-width: 375px;
+            margin: 5px;
+        }
+
+        p{
+            color: #84888C;
+            max-width: 450px;
+            margin: 0px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        &--backimg{
+            max-width: 100%;
+            border-radius: 10px;
+
+            @media (max-width: 750px) {
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 750px) {
+            width: 90%;
+
+            .col-6{
+                width: 100%;
+            }
+        }
     }
 
     &__organizar{
         background-color: #0285C9;
         max-width: 90%;
         margin: 130px auto;
-        border-radius: 10px;
+        border-radius: 15px;
 
         &--text{
             max-width: 347px;
             margin: 80px auto;
 
             h2{
-                font-style: normal;
-                font-weight: normal;
-                font-size: 32px;
-                line-height: 40px;
                 color: #FFFFFF;
-    
                 max-width: 313px;
-                margin: 5px 0px;
+                margin: 10px 0px;
             }
 
             p{
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 26px;
                 color: #FFFFFF;
-    
                 max-width: 347px;
                 margin: 5px 0px;
+            }
+
+            @media (max-width: 750px) {
+                margin: 10px auto;
+                max-width: 90%;
             }
         }
 
@@ -89,6 +137,25 @@
                 right: 20px;
                 bottom: 0px;
                 width: 90%;
+
+                @media (max-width: 750px) {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    max-width: 360px;
+                    margin: 0 auto;   
+                }
+            }
+        }
+
+        @media (max-width: 750px) {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 0px;
+            margin: 50px auto;
+
+            .col-6{
+                width: 100%;
             }
         }
     }
@@ -100,10 +167,7 @@
         border-radius: 10px;
         padding-top: 50px;
 
-        h1{
-            font-style: normal;
-            font-weight: normal;
-            font-size: 32px;
+        h2{
             line-height: 137%;
             align-items: center;
             text-align: center;
@@ -111,18 +175,11 @@
         }
 
         h3{
-            font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 28px;
             text-align: center;
             color: #303D63;
         }
 
         p{
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
             line-height: 28px;
             align-items: center;
             text-align: center;
@@ -172,6 +229,10 @@
                 }
             }
         }
+
+        @media (max-width: 750px) {
+            display: none !important;
+        }
     }
 
     &__vantagens{
@@ -181,25 +242,14 @@
         &--text{
             margin: 0 auto;
 
-            h1{
-                font-style: normal;
-                font-weight: normal;
-                font-size: 32px;
+            h2{
                 line-height: 137%;
-
                 color: #303D63;
-
                 max-width: 372px;
             }
 
             p{
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 26px;
-
                 color: #84888C;
-
                 max-width: 309px;
             }
         }
@@ -213,6 +263,189 @@
             height: 145px;
 
             margin: 0 auto;
+        }
+
+        @media (max-width: 750px) {
+            display: none !important; 
+        }
+    }
+
+    &__decida{
+        margin: 100px 0px;
+
+        h2{
+            line-height: 137%;
+            align-items: center;
+            text-align: center;
+            color: #303D63;
+        }
+
+        h3{
+            text-align: center;
+        }
+
+        p{
+            line-height: 28px;
+            align-items: center;
+            text-align: center;
+            max-width: 770px;
+            margin: 0 auto;
+            color: #84888C;
+        }
+
+        img{
+            margin: 0 auto;
+            display: block;
+        }
+
+        &--esquerda{
+            margin: 50px 0px;
+            border-right: 1px solid #84888C;
+
+            h3{
+                color: #84888C;
+            }
+
+            p{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                color: #84888C !important;
+
+                padding: 10px 0px;
+            }
+        }
+
+        &--direita{
+            margin: 50px 0px;
+
+            h3{
+                color: #303D63;
+            }
+
+            p{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                color: #303D63 !important;
+
+                padding: 10px 0px;
+            }
+        }
+
+        @media (max-width: 750px) {
+            display: none !important;
+        }
+    }
+
+    &__gestao{
+        max-width: 90%;
+        margin: 0 auto;
+        border-radius: 16px;
+        padding: 70px 0px;
+
+        background-image: url("/wp-content/themes/Martin/assets/images/home/gestao.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        &--text{
+            margin: 0 auto;
+            display: block;
+
+            h2{
+                line-height: 137%;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+                margin: 0px;
+            }
+    
+            p{
+                align-items: center;
+                text-align: center;
+                max-width: 770px;
+                margin: 0 auto;
+                color: #FFFFFF;
+            }
+
+            a{
+                margin: 20px auto;
+                align-items: center;
+                display: block;
+                max-width: 220px;
+            }
+        }
+
+        @media (max-width: 750px) {
+            display: none !important;
+        }
+    }
+
+    &__posts{
+        max-width: 80%;
+        margin: 30px auto;
+
+        h2{
+            font-weight: bold;
+            line-height: 32px;
+            padding: 0px 12px;
+            color: #041F8F;
+        }
+
+        &--box{
+            max-width: 352px;
+            height: 381px;
+            margin: 0 15px;
+            border-radius: 6px;
+            
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+            p{
+                position: absolute;
+                bottom: 15px;
+                left: 15px;
+
+                font-weight: 500;
+                line-height: 16px;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+            }
+        }
+
+        @media (max-width: 750px) {
+            display: none !important;
+        }
+    }
+
+    &__feedback{
+
+
+        h2{
+            font-weight: 500;
+            line-height: 137%;
+            text-align: center;
+            color: #303D63;
+        }
+
+        &--emojis{
+            margin: 0 auto;
+            max-width: 245px;
+
+            a{
+                img{
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        @media (max-width: 750px) {
+            display: none !important;
         }
     }
 }

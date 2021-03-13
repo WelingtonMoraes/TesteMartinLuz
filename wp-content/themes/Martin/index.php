@@ -15,15 +15,17 @@
             <h1>Reembolsos corporativos de forma simples e rápida. <b>Como deve ser.</b></h1>
             <p>Acabe com a dor de cabeça da gestão de despesas do dia a dia da sua empresa: pagamentos, reembolsos, compras on-line e gestão do fundo fixo. Controle seus gastos escaneando notas fiscais, acompanhando aprovações, visualizando relatórios e muito mais!</p>
             <a href="#" class="btn__claro">Peça já sua proposta</a>
-            <p style="color: #0285C9;" >Responderemos <b>em até 24h.</b></p>
+            <p class="respondemos" >Responderemos <b>em até 24h.</b></p>
         </div>
         <div class="col-6">
             <img src="<?php get_template_directory_uri() ?>/wp-content/themes/Martin/assets/images/home/img1.png"/>
         </div>
+    </div>
 
+    <div class="home__controle flex flex-wrap alinItem">
         <div class="col-6">
             <a href="javascript:void(0)" id="playV">
-                <img class="home__reembolso--backimg" src="<?php get_template_directory_uri() ?>/wp-content/themes/Martin/assets/images/home/backimg.png"/>
+                <img class="home__controle--backimg" src="<?php get_template_directory_uri() ?>/wp-content/themes/Martin/assets/images/home/backimg.png"/>
             </a>
             <div id="playvideo" class="modalVideo">
                 <div class="modal-content">
@@ -47,7 +49,9 @@
             <div class="home__organizar--text">
                 <h2><b>Organizar reembolsos</b> da sua empresa nunca foi tão rápido</h2>
                 <p>Utilizando BPP Corp, você tem controle total sobre o budget de sua equipe podendo realizar transferências instantâneas para os cartões corporativos dos colaboradores, acompanhar gastos, receber comprovantes e visualizar relatórios que organizam seu reembolso.</p>
-                <a href="#" class="btn__escuro">Peça já sua proposta</a>
+                <a href="#" class="btn__escuro">Peça já sua proposta
+                    <i style="margin-left:6px" class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
         <div class="col-6 home__organizar--img">
@@ -57,7 +61,7 @@
 
     <div class="home__reduzir flex flex-wrap">
         <div class="home__reduzir--text col-12">
-            <h1>A plataforma que ajuda a <b>reduzir os gastos</b> do dia a dia</h1>
+            <h2>A plataforma que ajuda a <b>reduzir os gastos</b> do dia a dia</h2>
             <p>Simplifique a gestão das despesas, evitando a perda de tempo com comprovantes e planilhas, reduzindo custos e aumentando os resultados da sua empresa.</p>
         </div>
         <div class="home__reduzir--icons">
@@ -128,13 +132,98 @@
         </div>
         <div class="col-6">
             <div class="home__vantagens--text col-6">
-                <h1>Conheça quem já conta com as <b>vantagens excluisivas</b> do BPP Corp</h1>
+                <h2>Conheça quem já conta com as <b>vantagens excluisivas</b> do BPP Corp</h2>
                 <p>A empresas mais bem-sucedidas do mundo, grandes e pequenas, confiam no BPP Corp para reduzir custos com organização dos gastos da suas empresas. </p>
             </div>
         </div>
     </div>
-    <div class="home__vantagens flex flex-wrap">
+    <div class="home__decida flex flex-wrap">
+        <div class="home__decida--text col-12">
+            <h2>Compare e <b>decida agora</b> mesmo</h2>
+            <p>Substitua o uso do dinheiro em espécie pelo BPP Corp e ganhe segurança e praticidade, evitando roubos e perdas, tendo uma plataforma única para gerir suas despesas. </p>
+        </div>
+        <div class="col-12 alignVertical flex flex-wrap">
+            <div class="home__decida--esquerda col-5">
+                <img src="<?php get_template_directory_uri() ?>/wp-content/themes/Martin/assets/icons/home/dinheiro.svg"/>
+                <h3>Dinheiro em papel</h3>
+                <p>Saque de dinheiro em papel para as despesas</p>
+                <p>Várias notas fiscais em papel</p>
+                <p>Diversas planilhas de gestão</p>
+                <p>Problemas de contabilização dos gastos</p>
+                <p>Não tem segurança</p>
+            </div>
+            <div class="home__decida--direita col-5">
+                <img src="<?php get_template_directory_uri() ?>/wp-content/themes/Martin/assets/icons/home/bpp.svg"/>
+                <h3>BPP Corp</h3>
+                <p>Faça pagamentos com o BPP Corp sem precisar tirar dinheiro</p>
+                <p>Prestação de contas sem papel, via app</p>
+                <p>Relatórios completos em um único lugar</p>
+                <p>Controle dos gastos com cartões pré-pago</p>
+                <p>Segurança total do seu dinheiro</p>
+            </div>
+        </div>
+    </div>
+    <div class="home__gestao">
+        <div class="home__gestao--text">
+            <h2>A sua gestão financeira nunca foi tão fácil. </h2>
+            <p>Conte com as soluções do BPP Corp e facilite o controle dos gastos da sua empresa agora mesmo.</p>
+            <a href="#" class="btn__claro">Peça já sua proposta</a>      
+            <p>Proposta <b>grátis</b> e sem compromisso.</p> 
+        </div>          
+    </div>
+    <div class="home__posts flex flex-wrap">
+        <h2 class="col-12">Últimos posts</h2>
+
+        <?php 
+			$all_posts_query = new WP_Query( array(
+				'nopaging' => true, 
+				'post_status' => 'publish'
+			) );
+
+			if ( $all_posts_query->have_posts() ) :
+                $cont = 0;
+				while ( $all_posts_query->have_posts() ) :
+					$all_posts_query->the_post();
+
+                    if($cont >= 3){
+                        break;
+                    }
+                    $cont ++;
+		?>
         
+        <a href="<?php the_permalink(); ?>" class="col-4">
+            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+            <div class="home__posts--box" style="background-image: url('<?php echo $image[0]; ?>')">
+                <p><?php the_title(); ?></p>
+            </div>
+        </a>
+
+        <?php 	
+				endwhile;
+			endif;
+			wp_reset_postdata();
+		?>
+    </div>
+    <div class="home__feedback flex flex-wrap alinItem">
+        <div class="col-6">
+            <h2>Esta página foi útil?</h2>
+        </div>
+        <div class="col-6">
+            <div class="home__feedback--emojis flex flex-wrap alinItem">
+                <a href="" class="col-3">
+                    <img src="<?php get_template_directory_uri() ?>/wp-content/themes/Martin/assets/icons/home/feedback1.svg"/>
+                </a>
+                <a href="" class="col-3">
+                    <img src="<?php get_template_directory_uri() ?>/wp-content/themes/Martin/assets/icons/home/feedback2.svg"/>
+                </a>
+                <a href="" class="col-3">
+                    <img src="<?php get_template_directory_uri() ?>/wp-content/themes/Martin/assets/icons/home/feedback3.svg"/>
+                </a>
+                <a href="" class="col-3">
+                    <img src="<?php get_template_directory_uri() ?>/wp-content/themes/Martin/assets/icons/home/feedback4.svg"/>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
