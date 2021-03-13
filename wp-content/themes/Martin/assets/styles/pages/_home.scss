@@ -13,6 +13,7 @@
             color: #041F8F;
 
             max-width: 505px;
+            margin: 5px;
         }
 
         h2{
@@ -23,6 +24,7 @@
             color: #041F8F;
 
             max-width: 375px;
+            margin: 5px;
         }
 
         p{
@@ -33,6 +35,7 @@
             color: #84888C;
 
             max-width: 450px;
+            margin: 0px;
         }
 
         img{
@@ -48,7 +51,168 @@
     &__organizar{
         background-color: #0285C9;
         max-width: 90%;
-        margin: 0 auto;
+        margin: 130px auto;
         border-radius: 10px;
+
+        &--text{
+            max-width: 347px;
+            margin: 80px auto;
+
+            h2{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 32px;
+                line-height: 40px;
+                color: #FFFFFF;
+    
+                max-width: 313px;
+                margin: 5px 0px;
+            }
+
+            p{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
+    
+                max-width: 347px;
+                margin: 5px 0px;
+            }
+        }
+
+        &--img{
+            position: relative;
+
+            img{
+                position: absolute;
+                right: 20px;
+                bottom: 0px;
+                width: 90%;
+            }
+        }
+    }
+
+    &__reduzir{
+        background-color: #F6F9FC;
+        max-width: 90%;
+        margin: 130px auto;
+        border-radius: 10px;
+        padding-top: 50px;
+
+        h1{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 137%;
+            align-items: center;
+            text-align: center;
+            color: #041F8F;
+        }
+
+        h3{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #303D63;
+        }
+
+        p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            align-items: center;
+            text-align: center;
+            max-width: 638px;
+            margin: 0 auto;
+            color: #84888C;
+        }
+
+        &--icons{
+            width: 100%;
+            margin: 0 auto;
+
+            &---swiper {
+                width: 100%;
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+
+                .swiper-wrapper{
+                    max-height: 1300px;
+
+                    .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        height: calc((100%) / 2);
+                  
+                        /* Center slide text vertically */
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                        .content-box{
+                            margin: 100px 0px;
+
+                            h3{
+                                max-width: 312px;
+                                margin: 5px 0px;
+                                margin-top: 30px;
+                            }
+    
+                            p{
+                                max-width: 330px;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__vantagens{
+        max-width: 90%;
+        margin: 0 auto;
+
+        &--text{
+            margin: 0 auto;
+
+            h1{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 32px;
+                line-height: 137%;
+
+                color: #303D63;
+
+                max-width: 372px;
+            }
+
+            p{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+
+                color: #84888C;
+
+                max-width: 309px;
+            }
+        }
+
+        &--box{
+            border: 2px solid #F6F9FC;
+            box-sizing: border-box;
+            border-radius: 20px;
+
+            max-width: 256px;
+            height: 145px;
+
+            margin: 0 auto;
+        }
     }
 }
