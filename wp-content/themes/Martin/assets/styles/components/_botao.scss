@@ -15,7 +15,7 @@
         display: inline-block;
         margin: 10px 0px;
 
-        @media (max-width: 750px) {
+        @media (max-width: 768px) {
             margin: 10px auto;
             display: block;
             max-width: 312px;
@@ -38,16 +38,27 @@
         display: inline-block;
         margin: 10px 0px;
 
-        @media (max-width: 750px) {
+        @media (max-width: 768px) {
             background-color: transparent;
             padding: 0px;
+        }
+    }
+
+    &__mobile{
+        display: none;
+        color: #0285C9;
+        margin-top: 20px;
+        text-align: left;
+
+        @media (max-width: 768px) {
+            display: block;
         }
     }
 
     .fa-arrow-right{
         display: none;
 
-        @media (max-width: 750px) {
+        @media (max-width: 768px) {
             display: inline;
         }
     }

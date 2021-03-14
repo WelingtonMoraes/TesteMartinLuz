@@ -18,11 +18,6 @@ $(function(){
         slidesPerView: 3,
         slidesPerColumn: 3,
         spaceBetween: 0,
-      },
-      750: {
-        slidesPerView: 2,
-        slidesPerColumn: 2,
-        spaceBetween: 0,
       }
     }
   });

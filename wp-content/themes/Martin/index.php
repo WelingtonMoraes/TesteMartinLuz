@@ -41,6 +41,9 @@
         <div class="col-6">
             <h2>Assuma agora o <br><b>controle dos gastos</b> variáveis da sua empresa</h2>
             <p>O BPP Corp é uma solução única para a administração de gastos corporativos que conta com uma conta digital empresarial grátis, cartões VISA pré-pagos para controle total das despesas e um aplicativo sem custos adicionais para tornar seu controle financeiro mais simples e prático! </p>
+            <a href="#" class="btn__escuro btn__mobile">Peça já sua proposta
+                <i style="margin-left:6px" class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
         </div>
     </div>
 
@@ -117,16 +120,16 @@
     </div>
     <div class="home__vantagens flex flex-wrap">
         <div class="col-6 flex flex-wrap">
-            <div class="home__vantagens--box col-6 alignVertical">
+            <div class="home__vantagens--box col-5 alignVertical">
                 <img src="<?php get_template_directory_uri() ?>/wp-content/themes/Martin/assets/images/home/BK.png"/>
             </div>
-            <div class="home__vantagens--box col-6 alignVertical">
+            <div class="home__vantagens--box col-5 alignVertical">
                 <img src="<?php get_template_directory_uri() ?>/wp-content/themes/Martin/assets/images/home/boticario.png"/>
             </div>
-            <div class="home__vantagens--box col-6 alignVertical">
+            <div class="home__vantagens--box col-5 alignVertical">
                 <img src="<?php get_template_directory_uri() ?>/wp-content/themes/Martin/assets/images/home/cacau.png"/>
             </div>
-            <div class="home__vantagens--box col-6 alignVertical">
+            <div class="home__vantagens--box col-5 alignVertical">
                 <img src="<?php get_template_directory_uri() ?>/wp-content/themes/Martin/assets/images/home/pague.png"/>
             </div>
         </div>
